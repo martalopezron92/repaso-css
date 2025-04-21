@@ -1,0 +1,105 @@
+
+/*-----Reseteo de etiquetas------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----Variables globales-------*/
+:root{
+    --primaryColor:#EFEFEF;
+    --secundaryColor:#6D213C;
+    --accentColor: #57886C;
+    --fontColor:#010101;
+    --fontColorAccent:#ffffff; 
+    --fontFamily:"Montserrat", sans-serif;;
+    --fontSize:1.25rem;
+}
+
+/*----Modificadores globales-----*/
+.global--posicion{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+
+.global--titulo{
+    font-size: var(--fontSize);
+}
+
+/*-----Etiquetas básicas---*/
+body{
+    background-color:var(--primaryColor);
+    height: 80vh;
+    width: 100vw;
+    font-family: var(--fontFamily);
+}
+
+/*-----Etiquetas especificas -- Modelo de BEM-----*/
+
+/*Cabecero*/
+.header{
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--secundaryColor);
+    color: var(--fontColorAccent);
+}
+
+/* Seccion principal*/
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Seccion de la izquierda*/
+.main__seccenu{
+    width: 50%;
+    height: 100%;
+    border-right: 0.05rem dashed var(--secundaryColor);
+}
+
+.main__seccenu__art{
+    width: 90%;
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main__seccenu__art__h2{
+    width: 100%;
+    height: 20%;
+}
+
+.main__seccenu__art__ol{
+    width: 70%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: initial;
+}
+
+/*Seccion de la derecha*/
+.main__seccact{
+    width: 50%;
+    height: 100%;
+}
+
+.main__seccact__art{
+    width: 100%;
+    height: 100%;
+}
+
+.main__seccact__art__tit{
+    width: 100%;
+    height: 30%;
+}
+
+/*-------Actividades-------*/
+
+
