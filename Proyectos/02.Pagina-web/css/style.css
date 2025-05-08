@@ -1,0 +1,19 @@
+/*Definir variables, que nos permitiran trabajar de manera paremetros*/
+:root{
+    --colorprimario: white;
+    --colorsecundario: rgba(236,236,236, 0.8);
+    --colorterciario: black;
+}
+
+/*PRIMORDIAL: Reseteo de etiquetas*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Etiquetas básicas*/
+body{
+    
+}
+
